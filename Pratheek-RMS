@@ -1,0 +1,55 @@
+import java.util.*;
+
+class Functions
+
+ {
+   
+   void greetings()
+
+    {
+ 
+        System.out.println("hello");
+
+    }
+   
+   void allotment(int vacancy)
+   
+    {
+ 
+       if(vacancy==0)
+ 
+       System.out.println("waiting");
+ 
+       else
+ 
+       System.out.println("table alloted");
+ 
+     }
+ 
+   
+}
+
+public class MyClass 
+ {
+ 
+   public static void main(String args[])
+
+    {
+ 
+       Functions entry=new Functions();
+
+        Functions seat=new Functions();
+
+        entry.greetings();
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter a number of vacant seats : ");
+
+        int vacancy=sc.nextInt();
+
+        seat.allotment(vacancy);
+
+     }
+
+}
